@@ -1,4 +1,4 @@
-package com.crawler.daenggu.daenggu;
+package com.crawler.daenggu;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

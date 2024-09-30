@@ -9,6 +9,12 @@ plugins {
 group 'com.crawler.daenggu'
 version '1.0-SNAPSHOT'
 
+jar {
+    manifest {
+        attributes 'Main-Class': 'com.crawler.daenggu.MainApplication'
+    }
+}
+
 repositories {
     mavenCentral()
 }
@@ -25,8 +31,8 @@ tasks.withType(JavaCompile) {
 }
 
 application {
-    mainModule = 'com.crawler.daenggu.daenggu'
-    mainClass = 'com.crawler.daenggu.daenggu.HelloApplication'
+    mainModule = 'com.crawler.daenggu'
+    mainClass = 'com.crawler.daenggu.HelloApplication'
 }
 
 javafx {

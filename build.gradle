@@ -32,7 +32,7 @@ tasks.withType(JavaCompile) {
 
 application {
     mainModule = 'com.crawler.daenggu'
-    mainClass = 'com.crawler.daenggu.HelloApplication'
+    mainClass = 'com.crawler.daenggu.MainApplication'
 }
 
 javafx {
@@ -41,9 +41,9 @@ javafx {
 }
 
 dependencies {
-
-    testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
+    implementation "org.jsoup:jsoup:1.18.1"
+    testImplementation "org.junit.jupiter:junit-jupiter-api:${junitVersion}"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:${junitVersion}"
 }
 
 test {
